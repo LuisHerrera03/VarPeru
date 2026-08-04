@@ -217,3 +217,28 @@ botonesCatalogo.forEach(boton=>{
     });
 
 });
+
+//===========================
+// MENÚ HAMBURGUESA
+//===========================
+
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+
+    menu.classList.toggle("activo");
+
+});
+// Cerrar menú al seleccionar una opción
+const enlacesMenu = document.querySelectorAll('.menu a');
+
+enlacesMenu.forEach(enlace => {
+
+    enlace.addEventListener('click', () => {
+
+        menu.classList.remove('activo');
+
+    });
+
+});
