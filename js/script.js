@@ -171,6 +171,7 @@ const trabajosPisco = trabajos.filter(trabajo =>
 );
 
 mostrarTrabajos(trabajosPisco);
+document.querySelector('.btn-filtro[data-categoria="pisco"]').classList.add("activo");
 
 //===========================
 // BOTONES DEL CATÁLOGO
