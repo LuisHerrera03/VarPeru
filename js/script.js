@@ -242,3 +242,19 @@ enlacesMenu.forEach(enlace => {
     });
 
 });
+
+// ========================================
+// PROTECCIÓN BÁSICA DE IMÁGENES
+// ========================================
+
+// Evitar arrastrar imágenes
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+    });
+});
+
+// Bloquear clic derecho
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});

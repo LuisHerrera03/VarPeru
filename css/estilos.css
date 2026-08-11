@@ -818,19 +818,7 @@ body{
 
 .card-contacto::before{
 
-    content:"";
-
-    position:absolute;
-
-    width:220px;
-    height:220px;
-
-    background:rgba(201,168,109,.08);
-
-    border-radius:50%;
-
-    top:-90px;
-    right:-70px;
+    display:none;
 
 }
 
@@ -1791,4 +1779,51 @@ body{
         font-size:28px;
     }
 
+/* ========================================
+   Bloqueo del texto de la pagina
+======================================== */
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+input,
+textarea,
+a,
+button{
+    -webkit-user-select:auto;
+    -moz-user-select:auto;
+    -ms-user-select:auto;
+    user-select:auto;
+}
+
+/* ========================================
+   PROTECCIÓN DE IMÁGENES Y CONTENIDO
+======================================== */
+
+/* Evitar selección de texto */
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/* Permitir interacción normal con enlaces y botones */
+a,
+button{
+    -webkit-user-select:auto;
+    -moz-user-select:auto;
+    -ms-user-select:auto;
+    user-select:auto;
+}
+
+/* Evitar arrastrar imágenes */
+img{
+    -webkit-user-drag:none;
+    user-drag:none;
+    user-select:none;
+}
 }
