@@ -715,6 +715,7 @@ body{
     display:flex;
     align-items:center;
     gap:22px;
+    cursor:pointer;
 
     padding:24px;
 
