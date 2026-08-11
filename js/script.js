@@ -154,23 +154,23 @@ botonesFiltro.forEach(boton => {
 
         const categoria = boton.dataset.categoria;
 
-        if (categoria === "todos") {
+        const filtrados = trabajos.filter(trabajo =>
+            trabajo.categoria === categoria
+        );
 
-            mostrarTrabajos(trabajos);
-
-        } else {
-
-            const filtrados = trabajos.filter(trabajo =>
-                trabajo.categoria === categoria
-            );
-
-            mostrarTrabajos(filtrados);
-
-        }
+        mostrarTrabajos(filtrados);
 
     });
 
 });
+
+
+// Mostrar Pisco por defecto al cargar la galería
+const trabajosPisco = trabajos.filter(trabajo =>
+    trabajo.categoria === "pisco"
+);
+
+mostrarTrabajos(trabajosPisco);
 
 //===========================
 // BOTONES DEL CATÁLOGO
