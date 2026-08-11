@@ -81,8 +81,6 @@ body{
     list-style:none;
 
     gap:45px;
-    
-    transform:translateY(5px);
 
 }
 
@@ -126,7 +124,7 @@ body{
     display:flex;
     align-items:center;
     background:#0b0b0b;
-    padding:70px 8%;
+    padding:140px 8% 70px;
 
 
 }
